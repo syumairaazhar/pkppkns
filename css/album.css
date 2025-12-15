@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.year-buttons {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.year-buttons button {
+    padding: 8px 18px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #a00000;
+    background: white;
+    cursor: pointer;
+}
+
+.year-buttons button.active {
+    background: #a00000;
+    color: white;
+}
+
+.album-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.album-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+

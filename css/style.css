@@ -1,0 +1,1212 @@
+/* ================================
+   ACTIVE MENU LINK
+   ================================ */
+/* Remove underline from parent dropdown toggle */
+.navbar .dropdown-toggle.active {
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+/* Keep underline ONLY for normal menu links (not dropdown) */
+.navbar .nav-link.active:not(.dropdown-toggle) {
+  border-bottom: 2px solid #8B0000 !important;
+  font-weight: 600;
+}
+
+/* Highlight active main nav link */
+.nav-link.active {
+  color: #8B0000 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #8B0000;
+}
+
+/* Highlight active dropdown item */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #ffffff !important;
+  color: #8b0000 !important;
+  font-weight: 600;
+}
+
+/* Remove blue focus outline on mobile & Safari */
+.nav-link:focus,
+.dropdown-toggle:focus,
+.dropdown-item:focus,
+.navbar *:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ================================
+   DROPDOWN MENU ANIMATION
+   Works for both desktop & mobile
+   ================================ */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+/* When Bootstrap adds .show class — show dropdown */
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown item transition */
+.dropdown-item {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ================================
+   NAVBAR TOGGLER FIXES
+   ================================ */
+/* Ensure dropdown toggle icon and background look clean */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ================================
+   GLASS NAVBAR
+   ================================ */
+/* === PKP PKNS Glass Navbar with Lightened #d2a4a4 === */
+.glass-nav {
+  background: rgba(210, 164, 164, 0.45) !important;
+  /* light transparent pink */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(139, 0, 0, 0.25);
+  /* theme-consistent red border */
+  box-shadow: 0 2px 14px rgba(139, 0, 0, 0.18);
+  /* soft red shadow */
+  transition: all 0.3s ease;
+}
+
+/* Text color + hover tweaks for readability */
+.glass-nav .nav-link {
+  color: #222 !important;
+  font-weight: 500;
+}
+
+.glass-nav .nav-link:hover {
+  color: #8B0000 !important;
+  /* PKP dark red hover */
+}
+
+.glass-nav .nav-link.active {
+  color: #8B0000 !important;
+  border-bottom: 2px solid #8B0000;
+}
+
+/* ================================
+   BREADCRUMB STYLING
+   ================================ */
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "›";
+  color: #6c757d;
+}
+
+/* ================================
+   FOOTER STYLING
+   ================================ */
+footer {
+  color: #8B0000;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* ================================
+   ALBUM PHP
+   ================================ */
+/* Active pill styling for year tabs */
+#albumTabs .nav-link.active {
+  background-color: #8B0000 !important;
+  /* Bootstrap blue */
+  color: #fff !important;
+  /* White text for contrast */
+  border: none;
+}
+
+/* Normal state */
+#albumTabs .nav-link {
+  color: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  margin: 0 5px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#albumTabs .nav-link:hover {
+  background-color: #8B0000;
+  color: #fff;
+}
+
+/* Make long dropdowns scrollable */
+.dropdown-menu {
+  max-height: 300px;
+  /* Adjust to your preference */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Optional: Add a subtle scrollbar style */
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+/* Slight shadow for better visibility */
+.dropdown-menu {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   TUJUAN HTML
+   ================================ */
+/*Color for tujuan heading*/
+.text-dark-custom {
+  color: #000 !important;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+}
+
+.info-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 30px;
+  margin: 40px auto;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+}
+
+.section-header h6 {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.membership-item {
+  margin-top: 40px;
+}
+
+.membership-item h4 {
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.membership-item p,
+.membership-item li {
+  font-size: 1rem;
+}
+
+.membership-item ol {
+  padding-left: 1.5rem;
+}
+
+.membership-item li {
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: small fade hover for headings */
+.membership-item h4:hover {
+  color: #0056b3;
+  transition: color 0.3s ease;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 30px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ================================
+   MAROON LINE
+   ================================ */
+.decorated-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.decorated-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background-color: #8B0000;
+  /* Yellow line */
+  border-radius: 2px;
+}
+
+/* === Reusable Section Header Style === */
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* spacing below title */
+  flex-wrap: nowrap;
+  /* keeps line and text in same row */
+}
+
+/* Left decorative line */
+.section-line {
+  width: 110px;
+  height: 6px;
+  background-color: #8B0000;
+  /* dark red */
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+/* Right decorative line that auto-expands */
+.section-line-right {
+  flex-grow: 1;
+  /* fills remaining space automatically */
+  height: 6px;
+  background-color: #8B0000;
+  border-radius: 3px;
+  margin-left: 12px;
+}
+
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  /* text color */
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1024px) {
+
+  /* Tablet adjustments */
+  .section-line {
+    width: 80px;
+    height: 5px;
+    margin-right: 10px;
+  }
+
+  .section-line-right {
+    height: 5px;
+    margin-left: 10px;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Mobile adjustments */
+  .section-header {
+    flex-wrap: wrap;
+    /* allows text and lines to wrap */
+  }
+
+  .section-line {
+    width: 60px;
+    height: 4px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+  }
+
+  .section-line-right {
+    height: 4px;
+    margin-left: 8px;
+    margin-top: 6px;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    text-align: center;
+    flex-basis: 100%;
+    /* makes title full width on small screens */
+    margin-bottom: 8px;
+  }
+}
+
+/* ================================
+   DROPDOWN TABLE
+   ================================ */
+.accordion-button:focus {
+  background-color: #fff3cd;
+  border: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffe082;
+  color: #000;
+  box-shadow: none;
+}
+
+
+.accordion-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .accordion-button:focus {
+    background-color: #fff3cd;
+    border: transparent;
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #ffe082;
+    color: #000;
+    box-shadow: none;
+  }
+
+
+  .accordion-button:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Center only the second column (2) in all rows */
+table tr td:nth-child(1),
+table tr th:nth-child(1),
+table tr th:nth-child(2),
+table tr td:nth-child(3),
+table tr th:nth-child(3),
+table tr td:nth-child(4),
+table tr th:nth-child(4) {
+  text-align: center;
+}
+
+/* ================================
+   INFO HARTA
+   ================================ */
+/* === Property Cards === */
+.property-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.property-icon {
+  font-size: 2.8rem;
+  color: white;
+  background-color: #8B0000;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.property-card h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+.property-card p {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* ================================
+   BUTTON TO THE TOP PAGE
+   ================================ */
+/* === Back to Top Button === */
+#backToTopBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 999999999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  background-color: #8B0000;
+  /* Dark red theme */
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* hover effect */
+#backToTopBtn:hover {
+  background-color: #a80000;
+  transform: scale(1.1);
+}
+
+/* Hero Section Styling */
+#hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: small top margin if nav is fixed */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 768px) {
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ================================
+   EVENT.PHP GRID ALBUM LAYOUT
+   ================================ */
+/* Make all image containers equal height */
+.gallery-item {
+  width: 100%;
+  height: 250px;
+  /* You can adjust height here */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Force all images to same shape */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Keeps uniform grid */
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-img {
+  cursor: pointer;
+  transition: transform .2s;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+.modal-img {
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  /* Keeps aspect ratio */
+}
+
+.modal-content {
+  border: none;
+  box-shadow: none;
+}
+
+/* ================================
+   BACK BUTTON FOR EVENT.PHP
+   ================================ */
+/* Theme button for Back to Year */
+.btn-theme {
+  background-color: #a00000;
+  border: 1px solid #a00000;
+  color: #fff;
+
+  display: inline-flex;
+  /* Make content alignable */
+  align-items: center;
+  /* Vertically center the arrow + text */
+  gap: 6px;
+}
+
+.btn-theme:hover {
+  background-color: #7a0000;
+  border: 1px solid #7a0000;
+  color: #fff;
+}
+
+/* ================================
+   GRID LAYOUT ALBUM.PHP
+   ================================ */
+.album-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.album-card img {
+  width: 100%;
+  transition: transform .4s ease;
+}
+
+.album-card:hover img {
+  transform: scale(1.1);
+}
+
+.album-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 40%, rgba(0, 0, 0, 0.65) 100%);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: opacity .3s ease, background .3s ease;
+}
+
+/* 🔥 DARKER ON HOVER */
+.album-card:hover .album-overlay {
+  opacity: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 30%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.album-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.album-date {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+/*----------------------------------FOR borang.html---------------------------------------------*/
+
+/* ================================
+   PDF VIEWVER ON BORANG.HTML(OLD)
+   ================================ */
+/* Fullscreen overlay */
+.pdf-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* No padding */
+  z-index: 9999;
+  overflow: hidden;
+  /* Prevent scroll on iOS */
+}
+
+/* Popup box */
+.pdf-popup {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 0;
+  /* Remove padding */
+  box-sizing: border-box;
+  /* Include padding/border in size */
+}
+
+/* Close button */
+.close-btn-pdf {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  background: #e63946;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  font-size: 16px;
+  z-index: 10000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* PDF iframe */
+.pdf-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+/* Extra mobile optimisation */
+@media (max-width: 768px) {
+  .pdf-popup {
+    width: 100%;
+    max-width: none;
+    /* Remove max-width */
+    height: 100vh;
+    margin: 0;
+    /* Remove margin */
+    padding: 0;
+    /* Remove padding */
+  }
+
+  .close-btn-pdf {
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+}
+
+/*-----------------------------END OF BORANG HTML--------------------------------------------------*/
+
+/* ================================
+   LIST BORANG IN GRID - BORANG2.HTML
+   ================================ */
+.list-item {
+  cursor: pointer;
+  font-size: 18px;
+  background: #f8f9fa;
+  border-left: 4px solid #dc3545;
+  /* Red accent */
+  transition: 0.2s;
+}
+
+.list-item:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   ENLARGE IMAGE POPUP OVERLAY
+   ================================ */
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 10px;
+}
+
+.image-popup {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: centre;
+  align-items: centre;
+}
+
+.image-popup img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Close button */
+.close-img-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffffff;
+  color: #000;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 32px;
+  z-index: 100000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile optimisation — keeps image perfect */
+@media (max-width: 768px) {
+  .image-popup img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+  }
+}
+
+
+
+/* ================================
+   FOOTER FB ICON
+   ================================ */
+.social-icons a {
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+  /* gold */
+  transform: scale(1.05);
+}
+
+.custom-footer {
+  background: #f8f9fa;
+}
+
+/* Desktop: show wording + icons + username on same line */
+.footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Prevent footer text from breaking */
+.footer-text {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.social-username {
+  font-size: 1rem;
+  color: #a00000;
+  white-space: nowrap;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 576px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================================
+   PDF VIEWER (COMPATIBLE WITH IOS) borang2.html
+   ================================ */
+/* Fullscreen overlay */
+.pdf-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 0;
+}
+
+/* Popup container */
+.pdf-popup {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+/* Header with controls */
+.pdf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #000000;
+  color: white;
+  flex-shrink: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pdf-title {
+  font-weight: 600;
+  font-size: 14px;
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Control buttons */
+.pdf-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pdf-btn {
+  background: #323335;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+}
+
+.pdf-btn:hover {
+  background: #4a5f7f;
+}
+
+.pdf-btn:active {
+  background: #1a2332;
+}
+
+/* Close button - positioned separately */
+.close-btn-pdf {
+  background: #d62839;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.2s;
+}
+
+.close-btn-pdf:hover {
+  background: #d62839;
+}
+
+.close-btn-pdf:active {
+  background: #c41e3a;
+}
+
+.pdf-back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999999;
+  /* Must be insanely high for iPad/iPhone */
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Page info */
+.page-info {
+  background: #34495e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* PDF content area - scrollable */
+.pdf-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background: #525659;
+  padding: 20px 10px;
+}
+
+/* PDF canvas container */
+#pdfContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.pdf-page-canvas {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+/* Loading indicator */
+.pdf-loading {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Zoom controls styling */
+.zoom-level {
+  background: #34495e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  min-width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pdf-popup {
+    max-width: 100%;
+  }
+
+  .pdf-content {
+    padding: 10px 5px;
+  }
+
+  .pdf-header {
+    padding: 8px 10px;
+    align-items: right;
+  }
+
+  .pdf-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .pdf-title {
+    font-size: 12px;
+    width: 100%;
+    order: -1;
+  }
+
+  .page-info,
+  .zoom-level {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .close-btn-pdf {
+    top: 8px;
+    right: 10px;
+    padding: 3px 6px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-popup {
+    max-width: 100%;
+  }
+
+  .pdf-content {
+    padding: 10px 5px;
+  }
+
+  .pdf-header {
+    padding: 8px 10px;
+    align-items: right;
+  }
+
+  .pdf-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .pdf-title {
+    font-size: 12px;
+    width: 100%;
+    order: -1;
+  }
+
+  .page-info,
+  .zoom-level {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  .close-btn-pdf {
+    top: 8px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 20px;
+  }
+}
+
+/* ================================
+   NEXT/PREVIOUS BUTTON FOR IMAGE
+   ================================ */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px 15px;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.viewer-image {
+  max-width: 95%;
+  max-height: 85%;
+  transform-origin: center center;
+  transition: transform 160ms ease;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: auto;
+}
+
+/* Make nav bigger on touch devices */
+@media (max-width: 768px) {
+  .nav-btn {
+    font-size: 44px;
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+
+  .close-img-btn {
+    font-size: 26px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  /* Hide prev/next buttons */
+  .prev-btn,
+  .next-btn {
+    display: none !important;
+  }
+
+  /* Center close button horizontally on mobile */
+  .close-img-btn {
+    right: 10%;
+    transform: translateX(50%);
+    font-size: 26px;
+    padding: 6px 10px;
+  }
+
+  /* Make viewer image responsive */
+  .viewer-image {
+    max-width: 90%;
+    max-height: 80%;
+  }
+}
+
+.viewer-image {
+  pointer-events: none !important;
+}
+
+/* Image viewer styling (paste into your CSS or <style>) */
+.image-viewer {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  touch-action: none;
+  /* we'll manage touch events manually */
+}
+
+.image-viewer.active {
+  display: flex;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 21000;
+}
